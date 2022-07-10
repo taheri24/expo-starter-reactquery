@@ -24,7 +24,7 @@ See it with [Expo Web](https://expo-starter.batyr.io) or [Expo Go](https://expo.
 1. Clone the repo
 
 ```bash
-> git clone https://github.com/kanzitelli/expo-starter.git App && cd App
+> git clone https://github.com/taherical/expo-starter-reactquery.git App && cd App
 ```
 
 2. Remove `.git` file (if not planning to contribute)
@@ -53,6 +53,7 @@ See it with [Expo Web](https://expo-starter.batyr.io) or [Expo Go](https://expo.
 - [React Navigation (v6)](https://github.com/react-navigation/react-navigation) - routing and navigation for React Native apps.
 - [RN UI lib](https://github.com/wix/react-native-ui-lib) - amazing Design System, UI toolset & components library for React Native. Dark Mode is implemented using this library.
 - [Reanimated 2](https://github.com/software-mansion/react-native-reanimated) - React Native's Animated library reimplemented.
+- [ReactQuery](https://tanstack.com/query/v4/)  - Powerful asynchronous state management for TS/JS, React  , It is really god
 - [MobX](https://github.com/mobxjs/mobx) - simple, scalable state management, with [mobx-persist-store](https://github.com/quarrant/mobx-persist-store) for persisting your stores.
 - ~~AsyncStorage~~ [MMKV](https://github.com/mrousavy/react-native-mmkv) - efficient, small mobile key-value storage framework developed by WeChat. [~30x faster](https://github.com/mrousavy/react-native-mmkv#benchmark) than _AsyncStorage_! Available only within Expo dev clients. Instructions on installation could be found [here](https://github.com/mrousavy/react-native-mmkv#expo).
 

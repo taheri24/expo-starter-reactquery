@@ -8,9 +8,9 @@ import {AppNavigator} from './src/app';
 import {configureDesignSystem} from './src/utils/designSystem';
 import {hydrateStores, StoresProvider} from './src/stores';
 import {initServices, ServicesProvider} from './src/services';
-
+import {QueryClientProvider,QueryClient} from 'react-query'
 LogBox.ignoreLogs(['Require']);
-
+const queryClient = new QueryClient();
 export default (): JSX.Element => {
   const [ready, setReady] = useState(false);
 
@@ -30,10 +30,12 @@ export default (): JSX.Element => {
   }, [startApp]);
 
   return (
+	<QueryClientProvider client={queryClient} >
     <GestureHandlerRootView style={{flex: 1}}>
       <StoresProvider>
         <ServicesProvider>{ready ? <AppNavigator /> : null}</ServicesProvider>
       </StoresProvider>
-    </GestureHandlerRootView>
+    </GestureHandlerRootView></QueryClientProvider>
+
   );
 };
